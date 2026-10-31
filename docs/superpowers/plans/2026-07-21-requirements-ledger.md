@@ -48,5 +48,5 @@
 - [x] 在独立测试会话中检查断点恢复和不可写目录的保存失败；恢复反馈正确但未生成测试附加的 RESPONSE.md，已注明；编辑实际返回 EACCES，原台账哈希不变，未绕过权限。
 - [x] 记录样本数、模型/方法、逐项结果、观察到的失败与未验证边界，不把静态检查当行为成功。
 - [x] 人工自审契约、模板、文档、测试覆盖；运行包检查及 `git diff --cached --check`，扫描提交中的敏感信息。
-- [ ] `git add` 明确交付文件并提交；创建公开仓库、将交付分支推为 main，设置跟踪分支。
-- [ ] 通过 GitHub API 确认可见性，并比较远端 main SHA 与本地 HEAD；如推送失败明确报告，不声称已发布。
+- [x] 明确暂存交付文件并提交实现 `d446941`；创建公开仓库 `https://github.com/nedhuohuo/Attentionskill`，推送 main，设置本地 main 跟踪 origin/main。
+- [x] GitHub API 确认 visibility=PUBLIC、默认分支 main；首次发布远端 main SHA 与本地实现提交完全一致。收尾文档更新后再次重跑检查及远端核对。
